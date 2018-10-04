@@ -1,20 +1,26 @@
 .article{
+	font-family : arial;
 	text-align: center;
 	border-top: 10px dotted #4CAF50;
-	height: 250px;
 	overflow: hidden;
 
 }
 
 img{
-	width: 150px;
-	height: 150px;
+	
 	position: relative;
-	top: 50px;
-	left: -200px
 }
 
 .article ul{
 	position: relative;
-	top: -100px;
+	text-align : center;
+	font-weight:bold;
+}
+
+li{
+	font-family: arial;
+	font-weight : normal;
+	color : #BBBBBB;
+	text-align : center;
+	
 }
