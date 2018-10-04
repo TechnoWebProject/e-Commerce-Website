@@ -18,6 +18,13 @@
 	La surprise dans les arts
 	La surprise est un élément de narration couramment utilisé dans le théâtre, le roman, le cinéma, etc. pour renverser une situation, afin d'éveiller l'intérêt du spectateur ou de soulager la tension narrative. Une surprise qui modifie radicalement la situation est appelée coup de théâtre.
 		<br/><br/>
+		
+		
+	<?php include 'article.php'; ?>
+	<?php include 'article.php'; ?>
+	<?php include 'article.php'; ?>
+	
+	
 	 Qui est relatif à la magie, qui est utilisé, produit par elle, en possède les vertus. Synon. cabalistique, occulte, surnaturel.Pharaon (...) expliquait les plaies dont l'Égypte avait été frappée par le pouvoir magique de Mosché et d'Aharon, plus grand que celui de ses hiéroglyphites (Gautier,Rom. momie,1858, p. 336):
 	Il [Svedenborg] a combiné [dans sa théorie des correspondances] plusieurs traditions métaphysiques, cabalistiques ou magiques, avec son rationalisme initial, d'une part, et les découvertes que l'éveil de sa nouvelle faculté de connaissance lui offrait, d'autre part. Cette théorie lui permettait de construire (...) un dictionnaire, dans lequel, à chaque chose du monde de l'expérience ordinaire, ou à chaque mot du langage usuel, répondît un être ou chose du monde «spirituel». Valéry,Variété V,1944, p. 271.
 		<br/><br/>
