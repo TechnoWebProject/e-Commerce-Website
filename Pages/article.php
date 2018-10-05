@@ -8,4 +8,14 @@
 		<li>info a partir de BDD</li>
 		<li>info a partir de BDD</li>
 	</ul>
+	
+	<form>
+	<label>Quantity :</label>
+	<SELECT name="quantity" size="1">
+	<OPTION>1
+	<OPTION>2
+	<OPTION>3
+	<OPTION>4
+	</SELECT>
+	</form>
 </div>
