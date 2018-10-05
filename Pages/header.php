@@ -26,7 +26,7 @@
 		<li class="menu"><a href="#">Account</a><ul>
 			
 			<li class="submenu">
-			Sing in.
+			Sign in.
 			<br/>
 			<form method="POST" action="index.php" target="_blank">
 				
@@ -42,8 +42,8 @@
 			
 			<br/>
 			Or create an account.
-			<form action="singUp.php">
-				<input type="submit" value="SING UP">
+			<form action="signUp.php">
+				<input type="submit" value="SIGN UP">
 			</form>
 			</li>
 			

@@ -1,11 +1,11 @@
 <html>
-<head><link rel="stylesheet" href="..\Styles\singUp.css">
+<head><link rel="stylesheet" href="..\Styles\signUp.css">
 <link rel="stylesheet" href="..\Styles\main.css"></head>
 
 <header></header>
 
 <body>
-<div class="title">Sing up to <br/>e-Commerce-Website</div>
+<div class="title">Sign up to <br/>e-Commerce-Website</div>
 <div class="container">
   <form action="index.php" method="POST">
 	<label for="usrname"><em>E-mail</em></label><br/>
