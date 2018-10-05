@@ -3,32 +3,27 @@
 	text-align : left;
 	}
 
-.article{
-	font-family : arial;
-	text-align: center;
-	border-top: 10px dotted #4CAF50;
-	overflow: hidden;
-
-}
-
 img{
 	
 	position: relative;
-	height : 25%;
-	width : 25%;
+	height : 15%;
+	width : 15%;
+	top : 10px;
 }
 
+
+	
 .article ul{
 	position: relative;
 	text-align : center;
 	font-weight:bold;
-	text-align : right;
+	float : right;
+	left : -150px;
 }
 
-li{
-	font-family: arial;
-	font-weight : normal;
-	color : #BBBBBB;
-	text-align : center;
-	
+.article form{
+	position:relative;
+	float : right;
+	top : 30px;
+	left : 170px;
 }
