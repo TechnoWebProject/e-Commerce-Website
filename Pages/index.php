@@ -3,7 +3,22 @@
 <html>
 
 <?php include 'header.php'; ?>
+<?php 
 
+$query = "INSERT INTO users (username, password, email) VALUES (:username, :password, :email)";
+
+$params = array("username" => $_POST["usrname"], "password" => $_POST["psw"], "email" => $_POST);
+$bdd = new PDO('mysql:host=localhost;dbname=technoweb', 'root') ;
+    try {
+        $res = $bdd->prepare($query);
+        $res->execute($params);
+        $datas = $res->fetchAll();
+        $res->closeCursor();
+        return $datas;
+    } catch (PDOException $e) {
+        var_dump($e);
+    }
+?>
 <body>
 <p>
 
