@@ -1,0 +1,18 @@
+img{
+	
+	position: relative;
+}
+
+.article ul{
+	position: relative;
+	text-align : center;
+	font-weight:bold;
+}
+
+li{
+	font-family: arial;
+	font-weight : normal;
+	color : #BBBBBB;
+	text-align : center;
+	
+}

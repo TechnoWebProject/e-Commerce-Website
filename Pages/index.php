@@ -1,5 +1,6 @@
 <!doctype html>
-<head><link rel="stylesheet" href="..\Styles\main.css"></head>
+<head><link rel="stylesheet" href="..\Styles\main.css">
+<link rel="stylesheet" href="..\Styles\products.css"></head></head>
 <html>
 
 <?php include 'header.php'; ?>
