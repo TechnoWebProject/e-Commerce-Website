@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="..\Styles\products.css"></head></head>
 
 =======
+<link rel="stylesheet" href="..\Styles\products.css"></head>
 >>>>>>> Sylvain's-Work
 <html>
 
@@ -17,6 +18,9 @@
 	<br/><br/><br/><br/></br></br>
 	
 	<div id="col">
+		<?php include 'article.php'; ?>
+		<?php include 'article.php'; ?>
+		<?php include 'article.php'; ?>
 		<?php include 'article.php'; ?>
 		<?php include 'article.php'; ?>
 		<?php include 'article.php'; ?>

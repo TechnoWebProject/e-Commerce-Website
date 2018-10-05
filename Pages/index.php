@@ -3,6 +3,9 @@
 <<<<<<< HEAD
 <link rel="stylesheet" href="..\Styles\products.css"></head>
 =======
+<link rel="stylesheet" href="..\Styles\products.css">
+<link rel="stylesheet" href="..\Styles\article.css">
+</head>
 >>>>>>> Sylvain's-Work
 <html>
 
