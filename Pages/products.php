@@ -4,8 +4,11 @@
 <link rel="stylesheet" href="..\Styles\main.css"></head>
 
 <link rel="stylesheet" href="..\Styles\main.css">
+<<<<<<< HEAD
 <link rel="stylesheet" href="..\Styles\products.css"></head></head>
 
+=======
+>>>>>>> Sylvain's-Work
 <html>
 
 <?php include 'header.php'; ?>
