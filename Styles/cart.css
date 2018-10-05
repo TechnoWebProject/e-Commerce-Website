@@ -1,3 +1,8 @@
+.basket{
+	margin-top : 100px;
+	text-align : left;
+	}
+
 .article{
 	font-family : arial;
 	text-align: center;
@@ -9,17 +14,21 @@
 img{
 	
 	position: relative;
+	height : 25%;
+	width : 25%;
 }
 
 .article ul{
 	position: relative;
 	text-align : center;
 	font-weight:bold;
+	text-align : right;
 }
 
-.article li{
+li{
 	font-family: arial;
 	font-weight : normal;
 	color : #BBBBBB;
 	text-align : center;
 	
+}

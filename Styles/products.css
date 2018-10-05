@@ -1,11 +1,3 @@
-.article{
-	font-family : arial;
-	text-align: center;
-	border-top: 10px dotted #4CAF50;
-	overflow: hidden;
-
-}
-
 img{
 	
 	position: relative;
@@ -17,9 +9,10 @@ img{
 	font-weight:bold;
 }
 
-.article li{
+li{
 	font-family: arial;
 	font-weight : normal;
 	color : #BBBBBB;
 	text-align : center;
 	
+}
