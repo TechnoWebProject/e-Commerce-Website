@@ -40,6 +40,10 @@
 			
 			</form>
 			
+			<form>
+				<input type="submit" value="LOGOUT">
+			</form>
+			
 			<br/>
 			Or create an account.
 			<form action="signUp.php">

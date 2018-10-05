@@ -20,9 +20,7 @@
 		<br/><br/>
 		
 		
-	<?php include 'article.php'; ?>
-	<?php include 'article.php'; ?>
-	<?php include 'article.php'; ?>
+	
 	
 	
 	 Qui est relatif à la magie, qui est utilisé, produit par elle, en possède les vertus. Synon. cabalistique, occulte, surnaturel.Pharaon (...) expliquait les plaies dont l'Égypte avait été frappée par le pouvoir magique de Mosché et d'Aharon, plus grand que celui de ses hiéroglyphites (Gautier,Rom. momie,1858, p. 336):
@@ -37,6 +35,9 @@
 	♦ Hanap magique. Hanap rempli d'un vin inépuisable que seuls peuvent goûter les êtres purs. Le cor qui ne résonne que touché par des lèvres pures, le hanap magique qui n'est plein que pour l'amant fidèle, n'appartiennent vraiment qu'à nous (Renan,Souv. enf.,1883, p. 78).
 		<br/>
 	♦ Miroir magique. Miroir dans lequel les magiciens prétendent faire apparaître des personnes, des événements, des faits éloignés. Il contempla dans son miroir magique des combats gigantesques (Sand,Mauprat,1837, p.120).
+	<?php include 'article.php'; ?>
+	<?php include 'article.php'; ?>
+	<?php include 'article.php'; ?>
 	</p>
 </body>
 </html>

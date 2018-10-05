@@ -1,5 +1,6 @@
 <!doctype html>
-<head><link rel="stylesheet" href="..\Styles\3columns.css"></head>
+<head><link rel="stylesheet" href="..\Styles\3columns.css">
+<link rel="stylesheet" href="..\Styles\main.css"></head>
 <html>
 
 <?php include 'header.php'; ?>
