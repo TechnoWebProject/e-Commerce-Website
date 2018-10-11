@@ -3,6 +3,7 @@
 	text-align: center;
 	border-top: 10px dotted #4CAF50;
 	overflow: hidden;
+	color : red;
 
 }
 
@@ -14,7 +15,7 @@ img{
 
 .article ul{
 	position: relative;
-	text-align : center;
+	text-align : center;	
 	font-weight:bold;
 }
 

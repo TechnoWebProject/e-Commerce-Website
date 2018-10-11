@@ -30,6 +30,26 @@
 	
 		
 	</div>
+	<?php
+	$user ='root';
+	$pass = '';
+	$db = 'dump';
+	
+	$mysqli = new mysqli('localhost', $user, $pass, $db) or die ("Unable to connect");
+	
+	if($mysqli->connect_error){
+		die('Error');
+	}
+	else{echo "connected";}
+	
+	$results = $mysqli->query("SELECT * FROM users");
+	
+	while($row=$results->fetch_assoc())
+	{
+		print $row['username'];
+	}
+	
+	?>
 
 	
 </body>

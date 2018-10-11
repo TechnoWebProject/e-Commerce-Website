@@ -3,8 +3,6 @@
 	<ul >Articles :
 		
 		<li>info a partir de BDD</li>
-		<li>info a partir de BDD</li>
-		<li>info a partir de BDD</li>
 	</ul>
 	
 	<form>
@@ -16,4 +14,5 @@
 	<OPTION>4
 	</SELECT>
 	</form>
+	</b>
 </div>
