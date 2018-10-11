@@ -1,0 +1,30 @@
+.article{
+	font-family : arial;
+	text-align: center;
+	border-top: 10px dotted #4CAF50;
+	overflow: hidden;
+
+}
+
+
+img{
+	
+	position: relative;
+}
+
+.article ul{
+	position: relative;
+	text-align : center;
+	font-weight:bold;
+}
+
+.article li{
+	font-family: arial;
+	font-weight : normal;
+	color : #BBBBBB;
+	text-align : center;
+	
+
+}
+
+
