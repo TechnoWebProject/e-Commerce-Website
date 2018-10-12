@@ -1,12 +1,7 @@
 <!doctype html>
 <head><link rel="stylesheet" href="..\Styles\3columns.css">
 
-<link rel="stylesheet" href="..\Styles\main.css"></head>
-
 <link rel="stylesheet" href="..\Styles\main.css">
-
-<link rel="stylesheet" href="..\Styles\products.css"></head></head>
-
 
 <link rel="stylesheet" href="..\Styles\products.css"></head>
 
