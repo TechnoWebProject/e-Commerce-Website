@@ -1,8 +1,6 @@
 <!doctype html>
-<head><link rel="stylesheet" href="..\Styles\main.css">
-
-<link rel="stylesheet" href="..\Styles\products.css"></head>
-
+<head>
+<link rel="stylesheet" href="..\Styles\main.css">
 <link rel="stylesheet" href="..\Styles\products.css">
 <link rel="stylesheet" href="..\Styles\article.css">
 </head>
