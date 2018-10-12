@@ -24,27 +24,6 @@ SET time_zone = "+00:00";
 
 -- --------------------------------------------------------
 
---
--- Structure de la table `articles`
---
-
-CREATE TABLE `articles` (
-  `id` int(11) NOT NULL,
-  `name` varchar(30) NOT NULL,
-  `image` text NOT NULL,
-  `price` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Déchargement des données de la table `articles`
---
-
-INSERT INTO `articles` (`id`, `name`, `image`, `price`) VALUES
-(1, 'Etoile de la mort', '../Database/th.jpg', 20),
-(2, 'Dolorean', '../Database/dolorean.jpg', 11000),
-(3, 'Convecteur Temporel', '../Database/convector.jpg', 3140);
-
--- --------------------------------------------------------
 
 --
 -- Structure de la table `orders`
@@ -119,9 +98,9 @@ CREATE TABLE `order_products` (
 --
 
 INSERT INTO `order_products` (`id`, `order_id`, `product_id`, `quantity`, `unit_price`, `created_at`, `updated_at`) VALUES
-(2, 1, 1, 1, 57.08, '2018-10-11 15:50:24', '2018-10-11 15:50:24'),
-(3, 1, 2, 3, 46.22, '2018-10-11 15:50:24', '2018-10-11 15:50:24'),
-(4, 2, 1, 2, 50, '2018-10-11 15:50:24', '2018-10-11 15:50:24');
+(1, 1, 1, 1, 20, '2018-10-11 15:50:24', '2018-10-11 15:50:24'),
+(2, 2, 2, 2, 11000, '2018-10-11 15:50:24', '2018-10-11 15:50:24'),
+(3, 3, 3, 3, 3140, '2018-10-11 15:50:24', '2018-10-11 15:50:24');
 
 -- --------------------------------------------------------
 
@@ -135,6 +114,7 @@ CREATE TABLE `products` (
   `description` longtext COLLATE utf8_unicode_ci,
   `unit_price` double DEFAULT NULL,
   `range_id` int(10) UNSIGNED DEFAULT NULL,
+  `image` text NOT NULL,
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -143,9 +123,10 @@ CREATE TABLE `products` (
 -- Déchargement des données de la table `products`
 --
 
-INSERT INTO `products` (`id`, `name`, `description`, `unit_price`, `range_id`, `created_at`, `updated_at`) VALUES
-(2, 'test', 'description', 57.08, 2, '2018-10-11 15:50:23', '2018-10-11 15:50:23'),
-(3, 'test2', 'description2', 46.22, 3, '2018-10-11 15:50:23', '2018-10-11 15:50:23');
+INSERT INTO `products` (`id`, `name`, `description`, `unit_price`, `range_id`, `image`, `created_at`, `updated_at`) VALUES
+(1, 'Etoile de la mort', 'Planete', 20, 2, '../Database/th.jpg', '2018-10-11 15:50:23', '2018-10-11 15:50:23'),
+(2, 'Dolorean', 'Voiture rapide', 11000, 3, '../Database/dolorean.jpg', '2018-10-11 15:50:23', '2018-10-11 15:50:23'),
+(3, 'Convecteur Temporel', 'Truc servant a voyager dans le temps', 3140, 4, '../Database/convector.jpg', '2018-10-11 15:50:23', '2018-10-11 15:50:23');
 
 -- --------------------------------------------------------
 
@@ -228,11 +209,6 @@ INSERT INTO `user_addresses` (`id`, `human_name`, `address_one`, `address_two`, 
 -- Index pour les tables déchargées
 --
 
---
--- Index pour la table `articles`
---
-ALTER TABLE `articles`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `orders`

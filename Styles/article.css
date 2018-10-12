@@ -9,8 +9,9 @@
 
 
 img{
-	
 	position: relative;
+	height : 25%;
+	width : 25%;
 }
 
 .article ul{

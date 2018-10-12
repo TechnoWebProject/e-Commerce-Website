@@ -26,11 +26,9 @@ catch(Exception $e)
 		<a>Your cart :</a><br />
 		
 		<?php 
-		$request="SELECT products.name, description, articles.price, quantity, image
-		FROM products, order_products, articles
-		WHERE products.id = order_products.product_id 
-		AND products.id = articles.id
-		AND order_products.product_id = articles.id";
+		$request="SELECT products.name, products.description, products.unit_price, quantity, image
+		FROM products, order_products
+		WHERE products.id = order_products.product_id ";
 	
 		$reponse = $bdd->query($request);
 		while ($donnees = $reponse->fetch())
@@ -48,7 +46,7 @@ catch(Exception $e)
 	</form>
 	<p>
 	<label>Price : </label>
-	<?php echo ($donnees['price']*$donnees['quantity']); ?>
+	<?php echo ($donnees['unit_price']*$donnees['quantity']); ?>
 	</p>
 	<?php
 	}
