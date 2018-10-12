@@ -3,7 +3,7 @@
 	text-align : left;
 	}
 
-img{
+.basket img{
 	
 	position: relative;
 	height : 15%;
@@ -13,17 +13,23 @@ img{
 
 
 	
-.article ul{
+.basket ul{
 	position: relative;
 	text-align : center;
-	font-weight:bold;
 	float : right;
-	left : -150px;
+	top : 10px;
+	left : -200px;
 }
 
-.article form{
+.basket form{
 	position:relative;
 	float : right;
 	top : 30px;
-	left : 170px;
+	left : 70px;
+}
+
+.basket p{
+	position:relative;
+	top : -50px;
+	left : 500px;
 }

@@ -1,28 +1,30 @@
 <!doctype html>
-<head><link rel="stylesheet" href="..\Styles\3columns.css">
-<link rel="stylesheet" href="..\Styles\main.css">
-<link rel="stylesheet" href="..\Styles\products.css"></head>
-<html>
 
-<?php include 'header.php'; ?>
+<html>
+<head><link rel="stylesheet" href="..\Styles\3columns.css">
+
+<link rel="stylesheet" href="..\Styles\main.css">
+
+<link rel="stylesheet" href="..\Styles\products.css">
+
+<link rel="stylesheet" href="..\Styles\header.css"></head>
+
+
 
 <body>
+<?php include 'header.php'; ?>
 	<br/><br/><br/><br/></br></br>
 	
+	
+	
 	<div id="col">
-		<?php include 'article.php'; ?>
-		<?php include 'article.php'; ?>
-		<?php include 'article.php'; ?>
-		<?php include 'article.php'; ?>
-		<?php include 'article.php'; ?>
-		<?php include 'article.php'; ?>
-		<?php include 'article.php'; ?>
-		<?php include 'article.php'; ?>
 		<?php include 'article.php'; ?>
 	
 		
 	</div>
+	
 
 	
+
 </body>
 </html>

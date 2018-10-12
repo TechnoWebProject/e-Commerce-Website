@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<head><link rel="stylesheet" href="..\Styles\header.css"></head>
+
 
 <header>
 <p class="title"><a href="index.php">e-Commerce-Website</a></p>
@@ -26,7 +25,7 @@
 		<li class="menu"><a href="#">Account</a><ul>
 			
 			<li class="submenu">
-			Sing in.
+			Sign in.
 			<br/>
 			<form method="POST" action="index.php" target="_blank">
 				
@@ -40,10 +39,14 @@
 			
 			</form>
 			
+			<form>
+				<input type="submit" value="LOGOUT">
+			</form>
+			
 			<br/>
 			Or create an account.
-			<form action="singUp.php">
-				<input type="submit" value="SING UP">
+			<form action="signUp.php">
+				<input type="submit" value="SIGN UP">
 			</form>
 			</li>
 			
