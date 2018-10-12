@@ -9,11 +9,6 @@
 	
 	<form>
 	<label>Quantity :</label>
-	<SELECT name="quantity" size="1">
-	<OPTION>1
-	<OPTION>2
-	<OPTION>3
-	<OPTION>4
-	</SELECT>
+	<input type="int" name="Quantity" size="1" maxlength ="3" value="1">
 	</form>
 </div>
