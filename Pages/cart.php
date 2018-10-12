@@ -11,19 +11,7 @@
 	<div class = 'basket'>
 		<p>Your cart :</p><br />
 		<?php include 'article.php'; ?>
-		<?php include 'article.php'; ?>
-		<?php include 'article.php'; ?>
-		<?php include 'article.php'; ?>
-		<?php include 'article.php'; ?>
-		<?php include 'article.php'; ?>
-		<?php include 'article.php'; ?>
-		<?php include 'article.php'; ?>
-		<?php include 'article.php'; ?>
-		<?php include 'article.php'; ?>
-		<?php include 'article.php'; ?>
-		<?php include 'article.php'; ?>
-		<?php include 'article.php'; ?>
-		<?php include 'article.php'; ?>
+		
 	</div>
 </body>
 </html>
