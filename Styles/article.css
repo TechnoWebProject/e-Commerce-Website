@@ -3,36 +3,29 @@
 	text-align: center;
 	border-top: 10px dotted #4CAF50;
 	overflow: hidden;
-	z-index:0;
-	color:red;
+	color : red;
 
 }
 
-
-.article img{
-	
-	z-index:0;
-	
-}
-
-.article ul{
-	
-	z-index:0;
-}
 
 img{
 	
 	position: relative;
 }
 
-.article_name{
+.article ul{
+	position: relative;
+	text-align : center;	
 	font-weight:bold;
 }
 
-li{
+.article li{
 	font-family: arial;
 	font-weight : normal;
 	color : #BBBBBB;
 	text-align : center;
 	
+
 }
+
+

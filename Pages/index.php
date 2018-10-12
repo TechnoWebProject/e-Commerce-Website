@@ -1,5 +1,12 @@
 <!doctype html>
-<head><link rel="stylesheet" href="..\Styles\main.css"></head>
+<head><link rel="stylesheet" href="..\Styles\main.css">
+
+<link rel="stylesheet" href="..\Styles\products.css"></head>
+
+<link rel="stylesheet" href="..\Styles\products.css">
+<link rel="stylesheet" href="..\Styles\article.css">
+</head>
+
 <html>
 
 <?php include 'header.php'; ?>
@@ -18,15 +25,10 @@
 	La surprise dans les arts
 	La surprise est un élément de narration couramment utilisé dans le théâtre, le roman, le cinéma, etc. pour renverser une situation, afin d'éveiller l'intérêt du spectateur ou de soulager la tension narrative. Une surprise qui modifie radicalement la situation est appelée coup de théâtre.
 		<br/><br/>
+		
+		
 	
-	<?php include 'article.php'; ?>
-	test
-	<?php include 'article.php'; ?>
-	<?php include 'article.php'; ?>
-	<?php include 'article.php'; ?>
-	<?php include 'article.php'; ?>
-	<?php include 'article.php'; ?>
-	<?php include 'article.php'; ?>
+	
 	
 	 Qui est relatif à la magie, qui est utilisé, produit par elle, en possède les vertus. Synon. cabalistique, occulte, surnaturel.Pharaon (...) expliquait les plaies dont l'Égypte avait été frappée par le pouvoir magique de Mosché et d'Aharon, plus grand que celui de ses hiéroglyphites (Gautier,Rom. momie,1858, p. 336):
 	Il [Svedenborg] a combiné [dans sa théorie des correspondances] plusieurs traditions métaphysiques, cabalistiques ou magiques, avec son rationalisme initial, d'une part, et les découvertes que l'éveil de sa nouvelle faculté de connaissance lui offrait, d'autre part. Cette théorie lui permettait de construire (...) un dictionnaire, dans lequel, à chaque chose du monde de l'expérience ordinaire, ou à chaque mot du langage usuel, répondît un être ou chose du monde «spirituel». Valéry,Variété V,1944, p. 271.
@@ -40,6 +42,9 @@
 	♦ Hanap magique. Hanap rempli d'un vin inépuisable que seuls peuvent goûter les êtres purs. Le cor qui ne résonne que touché par des lèvres pures, le hanap magique qui n'est plein que pour l'amant fidèle, n'appartiennent vraiment qu'à nous (Renan,Souv. enf.,1883, p. 78).
 		<br/>
 	♦ Miroir magique. Miroir dans lequel les magiciens prétendent faire apparaître des personnes, des événements, des faits éloignés. Il contempla dans son miroir magique des combats gigantesques (Sand,Mauprat,1837, p.120).
+	<?php include 'article.php'; ?>
+	<?php include 'article.php'; ?>
+	<?php include 'article.php'; ?>
 	</p>
 </body>
 </html>
