@@ -1,5 +1,6 @@
 <div class="article">
 		
+<<<<<<< HEAD
 
 		<li>info a partir de BDD</li>
 	</ul>
@@ -16,4 +17,7 @@
 	</form>
 	</b>
 
+=======
+	
+>>>>>>> Sylvain's-Work
 </div>

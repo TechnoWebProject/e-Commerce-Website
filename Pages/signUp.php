@@ -1,6 +1,10 @@
 <html>
 <head><link rel="stylesheet" href="..\Styles\signUp.css">
+<<<<<<< HEAD:Pages/signUp.php
 <link rel="stylesheet" href="..\Styles\main.css"></head>
+=======
+<link rel="stylesheet" href="..\Styles\main.css">
+>>>>>>> Sylvain's-Work:Pages/signUp.php
 
 <header></header>
 
