@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="..\Styles\article.css">
 <link rel="stylesheet" href="..\Styles\main.css"></head>
 
+<<<<<<< HEAD
 <?php include 'header.php'; ?>
 
 <body>
@@ -24,6 +25,11 @@
 		<?php include 'article.php'; ?>
 		<?php include 'article.php'; ?>
 		<?php include 'article.php'; ?>
+=======
+ 
+ 	
+?>
+>>>>>>> Sylvain's-Work
 	</div>
 </body>
 </html>
