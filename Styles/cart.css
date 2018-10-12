@@ -1,0 +1,29 @@
+.basket{
+	margin-top : 100px;
+	text-align : left;
+	}
+
+img{
+	
+	position: relative;
+	height : 15%;
+	width : 15%;
+	top : 10px;
+}
+
+
+	
+.article ul{
+	position: relative;
+	text-align : center;
+	font-weight:bold;
+	float : right;
+	left : -150px;
+}
+
+.article form{
+	position:relative;
+	float : right;
+	top : 30px;
+	left : 170px;
+}
