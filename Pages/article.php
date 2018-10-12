@@ -6,7 +6,6 @@
 	
 	<form action="">
 	<label>Quantity :</label>
-<<<<<<< HEAD
 	<SELECT name="quantity" size="1">
 	<OPTION>1
 	<OPTION>2
@@ -14,8 +13,6 @@
 	<OPTION>4
 	</SELECT>
 	<input type="submit" value="add to cart">
-=======
->>>>>>> Sylvain's-Work
 	</form>
 	</b>
 =======

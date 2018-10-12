@@ -1,6 +1,5 @@
 <!doctype html>
 <head><link rel="stylesheet" href="..\Styles\3columns.css">
-<<<<<<< HEAD
 
 <link rel="stylesheet" href="..\Styles\main.css"></head>
 
@@ -11,10 +10,6 @@
 
 <link rel="stylesheet" href="..\Styles\products.css"></head>
 
-=======
-<link rel="stylesheet" href="..\Styles\main.css">
-<link rel="stylesheet" href="..\Styles\products.css"></head>
->>>>>>> Sylvain's-Work
 <html>
 
 <?php include 'header.php'; ?>
@@ -35,12 +30,8 @@
 		<?php include 'article.php'; ?>
 		<?php include 'article.php'; ?>
 		<?php include 'article.php'; ?>
-<<<<<<< HEAD
 =======
 >>>>>>> Quentin's-Work
-=======
-		<?php include 'article.php'; ?>
->>>>>>> Sylvain's-Work
 	
 		
 	</div>

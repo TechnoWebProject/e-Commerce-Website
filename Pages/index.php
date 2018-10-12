@@ -1,6 +1,5 @@
 <!doctype html>
 <<<<<<< HEAD
-<<<<<<< HEAD
 <head>
 <link rel="stylesheet" href="..\Styles\main.css">
 =======
@@ -9,8 +8,6 @@
 <link rel="stylesheet" href="..\Styles\article.css">
 </head>
 
-=======
->>>>>>> Sylvain's-Work
 <html>
 
 <?php include 'header.php'; ?>
