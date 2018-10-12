@@ -1,5 +1,8 @@
 
+<<<<<<< HEAD
 DROP TABLE IF EXISTS `ranges`;
+=======
+>>>>>>> Quentin's-Work
 CREATE TABLE `ranges` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -117,7 +120,10 @@ INSERT INTO `user_addresses` (`human_name`, `address_one`, `address_two`, `posta
 INSERT INTO `users` (username, email, password, billing_adress_id, delivery_adress_id)
   VALUES ('Fred Eric', 'fred.eric@example.com','password',1,2);
 INSERT INTO `users` (username, email, password, billing_adress_id, delivery_adress_id)
+<<<<<<< HEAD
   VALUES ('Frederic', 'frederic@example.com','password',3,4);
+=======
+>>>>>>> Quentin's-Work
 
 INSERT INTO `order_addresses` (`human_name`, `address_one`, `address_two`, `postal_code`, `city`, `country`)
   VALUES ('Fred Eric', '2 impasse Duvet','3ieme étage', '59000', 'Lille', 'FRANCE');

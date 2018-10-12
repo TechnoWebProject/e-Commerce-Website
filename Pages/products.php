@@ -17,8 +17,11 @@
 <body>
 	<br/><br/><br/><br/></br></br>
 	
+	
+	
 	<div id="col">
 		<?php include 'article.php'; ?>
+<<<<<<< HEAD
 		<?php include 'article.php'; ?>
 		<?php include 'article.php'; ?>
 		<?php include 'article.php'; ?>
@@ -27,10 +30,13 @@
 		<?php include 'article.php'; ?>
 		<?php include 'article.php'; ?>
 		<?php include 'article.php'; ?>
+=======
+>>>>>>> Quentin's-Work
 	
 		
 	</div>
 	
+<<<<<<< HEAD
 	
 	<?php
 	
@@ -45,6 +51,8 @@
 	
 	
 	?>
+=======
+>>>>>>> Quentin's-Work
 
 	
 </body>
