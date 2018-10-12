@@ -2,8 +2,7 @@
 <<<<<<< HEAD
 <head>
 <link rel="stylesheet" href="..\Styles\main.css">
-=======
->>>>>>> Quentin's-Work
+
 <link rel="stylesheet" href="..\Styles\products.css">
 <link rel="stylesheet" href="..\Styles\article.css">
 </head>

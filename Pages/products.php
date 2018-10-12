@@ -16,7 +16,7 @@
 	
 	<div id="col">
 		<?php include 'article.php'; ?>
-<<<<<<< HEAD
+
 		<?php include 'article.php'; ?>
 		<?php include 'article.php'; ?>
 		<?php include 'article.php'; ?>
@@ -25,14 +25,11 @@
 		<?php include 'article.php'; ?>
 		<?php include 'article.php'; ?>
 		<?php include 'article.php'; ?>
-=======
->>>>>>> Quentin's-Work
+
 	
 		
 	</div>
-	
-<<<<<<< HEAD
-	
+
 	<?php
 	
 	include '..\Database\databaseInit.php'; 
@@ -46,8 +43,6 @@
 	
 	
 	?>
-=======
->>>>>>> Quentin's-Work
 
 	
 </body>

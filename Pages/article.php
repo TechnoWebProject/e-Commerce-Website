@@ -1,6 +1,6 @@
 <div class="article">
 		
-<<<<<<< HEAD
+
 		<li>info a partir de BDD</li>
 	</ul>
 	
@@ -15,6 +15,5 @@
 	<input type="submit" value="add to cart">
 	</form>
 	</b>
-=======
->>>>>>> Quentin's-Work
+
 </div>
