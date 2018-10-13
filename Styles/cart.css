@@ -3,27 +3,35 @@
 	text-align : left;
 	}
 
+<<<<<<< HEAD
 img{
 	
 	position: relative;
 	height : 15%;
 	width : 15%;
 	top : 10px;
+=======
+>>>>>>> ddc27e40b0fdfa4b1ac159e7ace9c953efd8b6f2
 }
-
 
 	
 .article ul{
 	position: relative;
 	text-align : center;
+<<<<<<< HEAD
 	font-weight:bold;
 	float : right;
 	left : -150px;
+=======
+>>>>>>> ddc27e40b0fdfa4b1ac159e7ace9c953efd8b6f2
 }
 
 .article form{
 	position:relative;
 	float : right;
+<<<<<<< HEAD
 	top : 30px;
 	left : 170px;
+=======
+>>>>>>> ddc27e40b0fdfa4b1ac159e7ace9c953efd8b6f2
 }

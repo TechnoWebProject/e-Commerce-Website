@@ -15,8 +15,11 @@
 		<p>Your cart :</p><br />
 		<?php include 'article.php'; ?>
 		
+<<<<<<< HEAD
 =======
 >>>>>>> Sylvain's-Work
+=======
+>>>>>>> ddc27e40b0fdfa4b1ac159e7ace9c953efd8b6f2
 	</div>
 </body>
 </html>

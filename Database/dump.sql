@@ -1,5 +1,6 @@
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 DROP TABLE IF EXISTS `ranges`;
 =======
 >>>>>>> Quentin's-Work
@@ -7,6 +8,7 @@ CREATE TABLE `ranges` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `parent_id` int(10) unsigned DEFAULT NULL,
+=======
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
@@ -44,6 +46,7 @@ CREATE TABLE `user_addresses` (
 DROP TABLE IF EXISTS `order_addresses`;
 CREATE TABLE `order_addresses` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+>>>>>>> ddc27e40b0fdfa4b1ac159e7ace9c953efd8b6f2
   `human_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `address_one` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `address_two` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -51,9 +54,12 @@ CREATE TABLE `order_addresses` (
   `city` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `country` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+<<<<<<< HEAD
   `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+=======
+>>>>>>> ddc27e40b0fdfa4b1ac159e7ace9c953efd8b6f2
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (

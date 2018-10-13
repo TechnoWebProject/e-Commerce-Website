@@ -11,8 +11,10 @@
 =======
 >>>>>>> Sylvain's-Work
 
-<link rel="stylesheet" href="..\Styles\products.css">
 
+<<<<<<< HEAD
+=======
+>>>>>>> ddc27e40b0fdfa4b1ac159e7ace9c953efd8b6f2
 
 
 
