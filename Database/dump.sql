@@ -97,10 +97,7 @@ CREATE TABLE `order_products` (
 -- Déchargement des données de la table `order_products`
 --
 
-INSERT INTO `order_products` (`id`, `order_id`, `product_id`, `quantity`, `unit_price`, `created_at`, `updated_at`) VALUES
-(1, 1, 1, 1, 20, '2018-10-11 15:50:24', '2018-10-11 15:50:24'),
-(2, 2, 2, 2, 11000, '2018-10-11 15:50:24', '2018-10-11 15:50:24'),
-(3, 3, 3, 3, 3140, '2018-10-11 15:50:24', '2018-10-11 15:50:24');
+
 
 -- --------------------------------------------------------
 

@@ -1,9 +1,13 @@
 .basket{
 	margin-top : 100px;
-	text-align : left;
+	margin-left : 20px;
 	}
 
-
+.basket img{
+	position : relative;
+	height : 25%;
+	width : 25%;
+}
 
 	
 .basket ul{
@@ -17,11 +21,11 @@
 	position:relative;
 	float : right;
 	top : -135px;
-	left : -35px;
+	left : 75px;
 }
 
 .basket p{
 	position:relative;
 	top : -125px;
-	left : 650px;
+	left : 750px;
 }

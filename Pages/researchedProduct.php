@@ -26,7 +26,7 @@ catch(Exception $e)
 	die('Erreur : '.$e->getMessage());
 }
 
-$research = $_GET['search']; 
+$research = $_POST['search']; 
 $researchMAJ = strtoupper($research);
 $request="SELECT name, UPPER(name), image, unit_price
 		FROM products";

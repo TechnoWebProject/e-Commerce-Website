@@ -21,9 +21,11 @@ catch(Exception $e)
 	die('Erreur : '.$e->getMessage());
 }
 
+
+
 ?>
 	<div class = 'basket'>
-		<a>Your cart :</a><br />
+		<a>Your cart :</a><br /><br :>
 		
 		<?php 
 		$request="SELECT products.name, products.description, products.unit_price, quantity, image
@@ -40,9 +42,10 @@ catch(Exception $e)
 		</ul>
 		
 		
-	<form>
+	<form method="POST" action="cart.php">
 	<label>Quantity :</label>
 	<input type="int" name="Quantity" size="1" maxlength ="3" value="<?php echo $donnees['quantity']; ?>">
+	<input type="submit" value ="Add to cart" name = "Add to cart">
 	</form>
 	<p>
 	<label>Price : </label>

@@ -1,23 +1,22 @@
 <!doctype html>
 
 <html>
-<head><link rel="stylesheet" href="..\Styles\3columns.css">
+<head>
 
 <link rel="stylesheet" href="..\Styles\main.css">
 
-<link rel="stylesheet" href="..\Styles\products.css">
+<link rel="stylesheet" href="..\Styles\header.css">
 
-<link rel="stylesheet" href="..\Styles\header.css"></head>
+<link rel="stylesheet" href="..\Styles\article.css"></head>
 
 
 
 <body>
 <?php include 'header.php'; ?>
-	<br/><br/><br/><br/></br></br>
 	
 	
 	
-	<div id="col">
+	<div class = 'products'>
 		<?php include 'article.php'; ?>
 	
 		
