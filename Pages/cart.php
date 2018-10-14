@@ -30,7 +30,7 @@ catch(Exception $e)
 		<?php 
 		$request="SELECT products.name, products.description, products.unit_price, quantity, image
 		FROM products, order_products
-		WHERE products.id = order_products.product_id ";
+		WHERE products.id = order_products.id ";
 	
 		$reponse = $bdd->query($request);
 		while ($donnees = $reponse->fetch())
