@@ -17,15 +17,20 @@
 	left : -20px;
 }
 
-.basket form{
+.basket #quantity{
 	position:relative;
-	float : right;
 	top : -135px;
-	left : 75px;
+	left : 375px;
+}
+
+.basket #delete{
+	position:relative;
+	top : -235px;
+	left : 740px;
 }
 
 .basket p{
 	position:relative;
-	top : -125px;
-	left : 750px;
+	top : -190px;
+	left : 620px;
 }

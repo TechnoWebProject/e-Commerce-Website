@@ -28,7 +28,7 @@ catch(Exception $e)
 		<a>Your cart :</a><br /><br :>
 		
 		<?php 
-		$request="SELECT products.name, products.description, products.unit_price, quantity, image
+		$request="SELECT *
 		FROM products, order_products
 		WHERE products.id = order_products.id ";
 	
@@ -42,15 +42,21 @@ catch(Exception $e)
 		</ul>
 		
 		
-	<form method="POST" action="cart.php">
+	<form method="POST" action="confirmation_cart.php" id="quantity">
 	<label>Quantity :</label>
 	<input type="int" name="Quantity" size="1" maxlength ="3" value="<?php echo $donnees['quantity']; ?>">
+	<input type="hidden" name = "ID" value = "<?php echo $donnees['id'] ?>">
+	<input type="hidden" name = "Unit_price" value = "<?php echo $donnees['unit_price'] ?>">
 	<input type="submit" value ="Add to cart" name = "Add to cart">
 	</form>
 	<p>
 	<label>Price : </label>
 	<?php echo ($donnees['unit_price']*$donnees['quantity']); ?>
 	</p>
+	<form method="POST" action="confirmation_delete.php" id="delete">
+	<input type="hidden" name = "ID" value = "<?php echo $donnees['id'] ?>">
+	<input type="submit" value ="Delete Article" name = "Delete Article" style="background-color: red;">
+	</form>
 	<?php
 	}
 	$reponse->closeCursor();
