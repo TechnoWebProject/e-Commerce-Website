@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="..\Styles\article.css">
 <link rel="stylesheet" href="..\Styles\header.css">
 <link rel="stylesheet" href="..\Styles\conf_cart.css">
+<meta http-equiv="refresh" content="0; URL=cart.php">
 </head>
 
 <html>
@@ -31,11 +32,7 @@ catch(Exception $e)
 	$bdd->exec($sql);
 ?>
 
-<form action ="cart.php" class ="art">
-<p>Article deleted</br>
-<input type = "submit" value = "OK" name = "OK">
-</p>
-</form>
+
 
 </body>
 </html>
