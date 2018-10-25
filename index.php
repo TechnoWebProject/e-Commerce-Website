@@ -3,7 +3,7 @@
 ?>
 
 <?php
-
+	include 'Database/database.php';
 ?>
 <?php
 //TODO (in the next step) control user access
@@ -13,6 +13,7 @@
 //TODO get page parameter ($_GET['page'] or $_POST['page']) and assign it into $page variable
 
 //if 'action/'.$page'.php' exists then include it (use file_exists($filename) function)
+
 <?php
 
 
@@ -30,8 +31,9 @@
 
 <body>
 <?php
-include 'Pages/main.php';
 // TODO using $page decide to include header.php
+
+?>
 <?php
 
 //TODO add header display
