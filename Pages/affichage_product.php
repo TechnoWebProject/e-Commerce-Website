@@ -19,12 +19,26 @@ $reponse = $bdd->query($request);
 while ($donnees = $reponse->fetch())
 {
 	if ($var == 'article' or $var == 'cart'){
-
+		if ($var == 'article'){
+			$i++;
+			if($i==1){?>
+			<TR> <?php
+			}
+		?>
+		<TD>
+		<?php 
+		}
+		$link = "http://localhost/e-Commerce-Website/Pages/researchedProduct.php?search=" . $donnees['name'];
+		?>
+		<a href="<?php echo($link); ?>">
+		<?php
 		echo "<img src='".$donnees['image']."'/>";
 		?>
 		<ul><?php echo $donnees['name']; ?>
 			<li><?php echo $donnees['description']; ?></li>
 		</ul>
+		</a>
+		
 
 		<?php 
 		if ($var == 'article'){
@@ -56,6 +70,16 @@ while ($donnees = $reponse->fetch())
 		</form>
 		<p>
 		<?php
+
+		if($var =='article'){
+			?>
+			</TD>
+			<?php
+			if($i==3){
+				?> </TR> <?php
+				$i=0;
+			}
+		}
 
 		if ($var == 'cart'){
 

@@ -3,9 +3,6 @@
 	text-align: center;
 	overflow: hidden;
 	color : red;
-	-webkit-column-count:3; /* Opera, Safari, Google Chrome */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 3; /* Internet Explorer */
 	
 }
 
@@ -27,6 +24,12 @@
 	font-weight : normal;
 	color : #BBBBBB;
 }
+
+.article td{
+	
+	width : 27%;
+}
+
 
 .products{
 	margin-top : 100px;

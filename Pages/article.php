@@ -3,9 +3,12 @@
 	<?php include '../Database/database.php'; ?>
 	</br>
 	
-	<?php
 	
+	<TABLE align="center">
+		
+	<?php
 	$var = 'article';
+	$i=0;
 
 	include 'affichage_product.php';
 	
