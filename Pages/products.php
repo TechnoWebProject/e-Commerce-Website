@@ -14,12 +14,9 @@
 <body>
 <?php include 'header.php'; ?>
 	
-	
-	
 	<div class = 'products'>
 		<?php include 'article.php'; ?>
 	
-		
 	</div>
 	
 
