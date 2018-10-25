@@ -1,7 +1,7 @@
 
 
 <header>
-<p class="title"><a href="index.php">e-Commerce-Website</a></p>
+<p class="title"><a href="main.php">e-Commerce-Website</a></p>
 
 
 
@@ -10,7 +10,7 @@
 	<ul class="main_menu">
 	
 		<li class="search">
-			<form method="POST" action="researchedProduct.php">
+			<form method="GET" action="researchedProduct.php">
 				<input type="text" name="search" placeholder="Search on Website">
 			</form>
 		</li>
@@ -27,7 +27,7 @@
 			<li class="submenu">
 			Sign in.
 			<br/>
-			<form method="POST" action="index.php" target="_blank">
+			<form method="POST" action="main.php" target="_blank">
 				
 				<label><em>Username : </em></label>
 				<input type="text" name="username" placeholder="ex : FrstnameLstname">
