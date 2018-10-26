@@ -1,31 +1,34 @@
 .article{
 	font-family : arial;
 	text-align: center;
-	border-top: 10px dotted #4CAF50;
 	overflow: hidden;
 	color : red;
-
+	-webkit-column-count:3; /* Opera, Safari, Google Chrome */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3; /* Internet Explorer */
+	
 }
 
 
-img{
-	
+.article img{
 	position: relative;
+	height : 50%;
+	width : 50%;
 }
 
 .article ul{
-	position: relative;
-	text-align : center;	
+	position: relative;	
 	font-weight:bold;
 }
 
 .article li{
+	position : relative
 	font-family: arial;
 	font-weight : normal;
 	color : #BBBBBB;
-	text-align : center;
-	
-
 }
 
-
+.products{
+	margin-top : 100px;
+	margin-left : -100px;
+}

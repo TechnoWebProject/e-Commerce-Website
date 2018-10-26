@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<head><link rel="stylesheet" href="..\Styles\header.css"></head>
+
 
 <header>
 <p class="title"><a href="index.php">e-Commerce-Website</a></p>
@@ -11,7 +10,7 @@
 	<ul class="main_menu">
 	
 		<li class="search">
-			<form method="GET" action="researchedProduct.php" target="_blank">
+			<form method="POST" action="researchedProduct.php">
 				<input type="text" name="search" placeholder="Search on Website">
 			</form>
 		</li>

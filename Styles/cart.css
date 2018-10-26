@@ -1,29 +1,36 @@
 .basket{
 	margin-top : 100px;
-	text-align : left;
+	margin-left : 20px;
 	}
 
-img{
-	
-	position: relative;
-	height : 15%;
-	width : 15%;
-	top : 10px;
+.basket img{
+	position : relative;
+	height : 25%;
+	width : 25%;
 }
 
-
 	
-.article ul{
+.basket ul{
 	position: relative;
 	text-align : center;
-	font-weight:bold;
-	float : right;
-	left : -150px;
+	top : -80px;
+	left : -20px;
 }
 
-.article form{
+.basket #quantity{
 	position:relative;
-	float : right;
-	top : 30px;
-	left : 170px;
+	top : -135px;
+	left : 375px;
+}
+
+.basket #delete{
+	position:relative;
+	top : -235px;
+	left : 740px;
+}
+
+.basket p{
+	position:relative;
+	top : -190px;
+	left : 620px;
 }
