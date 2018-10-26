@@ -30,10 +30,12 @@
 		
 		<TD>
 		</br>
+		<?php $link = "http://localhost/e-Commerce-Website/Pages/researchedProduct.php?search=" . $row['name'];?>
+		<a href="<?php echo($link); ?>">
 		<?php
 		echo "<img src='".$row['image']."'/>";
-		//print $row['username'];
 		?>
+		</a>
 		</br>
 		<?php
 		echo $row['name'];?>

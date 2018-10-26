@@ -1,6 +1,6 @@
 <!doctype html>
 <head><link rel="stylesheet" href="..\Styles\main.css">
-<link rel="stylesheet" href="..\Styles\article.css">
+<link rel="stylesheet" href="..\Styles\article_researched.css">
 <link rel="stylesheet" href="..\Styles\header.css">
 </head>
 
@@ -26,9 +26,9 @@ catch(Exception $e)
 	die('Erreur : '.$e->getMessage());
 }
 
-$research = $_POST['search']; 
+$research = $_GET['search']; 
 $researchMAJ = strtoupper($research);
-$request="SELECT name, UPPER(name), image, unit_price
+$request="SELECT name, UPPER(name), image, unit_price, id
 		FROM products";
 $reponse = $bdd->query($request);
 
@@ -46,10 +46,13 @@ if ($donnees['UPPER(name)'] == $researchMAJ){
 		?>
 		€
 		
-		<form>
-		<label>Quantity :</label>
-		<input type="int" name="Quantity" size="1" maxlength ="3" value="">
-		</form>
+		<form method="POST" action="confirmation_cart.php" id="quantity">
+	<label>Quantity :</label>
+	<input type="int" name="Quantity" size="1" maxlength ="3" value="">
+	<input type="hidden" name = "ID" value = "<?php echo $donnees['id'] ?>">
+	<input type="hidden" name = "Unit_price" value = "<?php echo $donnees['unit_price'] ?>">
+	<input type="submit" value ="Add to cart" name = "Add to cart">
+	</form>
 <?php
 }
 }

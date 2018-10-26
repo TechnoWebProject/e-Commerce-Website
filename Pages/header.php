@@ -10,7 +10,7 @@
 	<ul class="main_menu">
 	
 		<li class="search">
-			<form method="POST" action="researchedProduct.php">
+			<form method="GET" action="researchedProduct.php">
 				<input type="text" name="search" placeholder="Search on Website">
 			</form>
 		</li>
