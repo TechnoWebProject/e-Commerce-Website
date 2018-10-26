@@ -1,6 +1,7 @@
 <html>
 <head><link rel="stylesheet" href="..\Styles\signUp.css">
-<link rel="stylesheet" href="..\Styles\main.css"></head>
+<link rel="stylesheet" href="..\Styles\main.css">
+<link rel="stylesheet" href="..\Styles\header.css"></head>
 
 <header></header>
 

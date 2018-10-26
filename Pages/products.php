@@ -1,20 +1,22 @@
 <!doctype html>
-<head><link rel="stylesheet" href="..\Styles\3columns.css">
+
+<html>
+<head>
 
 <link rel="stylesheet" href="..\Styles\main.css">
 
-<link rel="stylesheet" href="..\Styles\products.css"></head>
+<link rel="stylesheet" href="..\Styles\header.css">
 
-<html>
+<link rel="stylesheet" href="..\Styles\article.css"></head>
 
-<?php include 'header.php'; ?>
+
 
 <body>
-	<br/><br/><br/><br/></br></br>
+<?php include 'header.php'; ?>
 	
 	
 	
-	<div id="col">
+	<div class = 'products'>
 		<?php include 'article.php'; ?>
 	
 		
@@ -22,5 +24,6 @@
 	
 
 	
+
 </body>
 </html>
