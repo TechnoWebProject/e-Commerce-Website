@@ -3,12 +3,6 @@
 	text-align: center;
 	overflow: hidden;
 	color : red;
-<<<<<<< HEAD
-=======
-	/*-webkit-column-count:3; /* Opera, Safari, Google Chrome */
-    /*-moz-column-count: 3; /* Firefox */
-    /*column-count: 3; /* Internet Explorer */
->>>>>>> Quentin's-Work
 	
 }
 
@@ -36,11 +30,7 @@
 	width : 27%;
 }
 
-<<<<<<< HEAD
 
-=======
-/*
->>>>>>> Quentin's-Work
 .products{
 	margin-top : 100px;
 	margin-left : -100px;
