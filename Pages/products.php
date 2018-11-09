@@ -14,6 +14,11 @@
 <body>
 <?php include 'header.php'; ?>
 	
+<<<<<<< HEAD
+=======
+	
+	
+>>>>>>> Quentin's-Work
 	<div class = 'products'>
 		<?php include 'article.php'; ?>
 	

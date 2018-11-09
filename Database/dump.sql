@@ -120,6 +120,7 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `description`, `unit_price`, `range_id`, `image`, `created_at`, `updated_at`) VALUES
+<<<<<<< HEAD
 (1, 'Etoile de la mort', 'Planete', 20, 2, '../Database/th.jpg', '2018-10-11 15:50:23', '2018-10-11 15:50:23'),
 (2, 'Dolorean', 'Voiture rapide', 11000, 3, '../Database/dolorean.jpg', '2018-10-11 15:50:23', '2018-10-11 15:50:23'),
 (3, 'Convecteur Temporel', 'Truc servant a voyager dans le temps', 3140, 4, '../Database/convector.jpg', '2018-10-11 15:50:23', '2018-10-11 15:50:23');
@@ -130,6 +131,10 @@ INSERT INTO `products` (`id`, `name`, `description`, `unit_price`, `range_id`, `
 -- Structure de la table `ranges`
 --
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> Quentin's-Work
 CREATE TABLE `ranges` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
