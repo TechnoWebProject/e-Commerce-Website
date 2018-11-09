@@ -1,7 +1,7 @@
 
 
 <header>
-<p class="title"><a href="index.php">e-Commerce-Website</a></p>
+<p class="title"><a href="main.php">e-Commerce-Website</a></p>
 
 
 
@@ -27,7 +27,7 @@
 			<li class="submenu">
 			Sign in.
 			<br/>
-			<form method="POST" action="index.php" target="_blank">
+			<form method="POST" action="main.php" target="_blank">
 				
 				<label><em>Username : </em></label>
 				<input type="text" name="username" placeholder="ex : FrstnameLstname">

@@ -120,16 +120,15 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `description`, `unit_price`, `range_id`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'Etoile de la mort', 'Cette station de combat spatiale est dotée du laser Mark 1 capable de détruire une lune ou même une planète en un seul tir. Fournie avec 15 000 batteries de turbolaser (dont 5000 lourdes), 2 500 canons laser, 2 500 canons à ions Borstel NK-7 et 700 rayons tracteurs. \nConseil : Veillez à ne pas exposer votre étoile à une bande de rebelles capable de désactiver le bouclier d Endor', 20, 2, '../Database/th.jpg', '2018-10-11 15:50:23', '2018-10-11 15:50:23'),
-(2, 'Dolorean', 'Idéal pour être ne plus jamais être en retard. Dotée du nouveau moteur hybride, et du regulateur de vitesse Piskit vous assurant un contrôle parfait de votre vitesse.', 11000, 3, '../Database/dolorean.jpg', '2018-10-11 15:50:23', '2018-10-11 15:50:23'),
-(3, 'Convecteur Temporel', 'Truc servant a voyager dans le temps. \nNouveau modèle, possibilité de connecter via les applications android et iOs. Machine à fumée intégrée pour ajouter un effet stylé à vos voyages temporels.', 3140, 4, '../Database/convector.jpg', '2018-10-11 15:50:23', '2018-10-11 15:50:23');
+(1, 'Etoile de la mort', 'Planete', 20, 2, '../Database/th.jpg', '2018-10-11 15:50:23', '2018-10-11 15:50:23'),
+(2, 'Dolorean', 'Voiture rapide', 11000, 3, '../Database/dolorean.jpg', '2018-10-11 15:50:23', '2018-10-11 15:50:23'),
+(3, 'Convecteur Temporel', 'Truc servant a voyager dans le temps', 3140, 4, '../Database/convector.jpg', '2018-10-11 15:50:23', '2018-10-11 15:50:23');
 
 -- --------------------------------------------------------
 
 --
 -- Structure de la table `ranges`
 --
-
 
 CREATE TABLE `ranges` (
   `id` int(10) UNSIGNED NOT NULL,
