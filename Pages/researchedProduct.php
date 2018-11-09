@@ -1,14 +1,3 @@
-<!doctype html>
-<head><link rel="stylesheet" href="..\Styles\main.css">
-<link rel="stylesheet" href="..\Styles\article_researched.css">
-<link rel="stylesheet" href="..\Styles\header.css">
-</head>
-
-<html>
-
-
-
-<body>
 <?php include 'header.php'; ?>
 <p>
 
@@ -28,7 +17,5 @@ include 'affichage_product.php';
 ?>
 		
 </p>
-</body>
-</html>
 
 

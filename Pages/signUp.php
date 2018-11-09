@@ -1,10 +1,4 @@
-<html>
-<head><link rel="stylesheet" href="..\Styles\signUp.css">
-<link rel="stylesheet" href="..\Styles\main.css"></head>
 
-<header></header>
-
-<body>
 <div class="title">Sign up to <br/>e-Commerce-Website</div>
 <div class="container">
   <form action="index.php" method="POST">
@@ -18,6 +12,7 @@
     <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
 		<br/>
     <input type="submit" value="Submit">
+	<input type="hidden" name="page" value="main">
   </form>
 </div>
 
@@ -28,5 +23,3 @@
   <p id="number" class="invalid">A <b>number</b></p>
   <p id="length" class="invalid">Minimum <b>8 characters</b></p>
 </div>
-</body>
-</html>

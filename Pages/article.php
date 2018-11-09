@@ -1,6 +1,6 @@
 <div class="article">
 		
-	<?php include '../Database/database.php'; ?>
+	<?php include 'Database/database.php'; ?>
 	</br>
 	
 	
@@ -10,7 +10,7 @@
 	$var = 'article';
 	$i=0;
 
-	include 'affichage_product.php';
+	include 'Pages/affichage_product.php';
 	
 	?>
 	
