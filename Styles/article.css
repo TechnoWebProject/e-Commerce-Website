@@ -1,26 +1,37 @@
 .article{
 	font-family : arial;
 	text-align: center;
-	border-top: 10px dotted #4CAF50;
 	overflow: hidden;
-
+	color : red;
+	
 }
 
-img{
-	
+
+.article img{
 	position: relative;
+	height : 50%;
+	width : 50%;
 }
 
 .article ul{
-	position: relative;
-	text-align : center;
+	position: relative;	
 	font-weight:bold;
 }
 
-li{
+.article li{
+	position : relative
 	font-family: arial;
 	font-weight : normal;
 	color : #BBBBBB;
-	text-align : center;
+}
+
+.article td{
 	
+	width : 27%;
+}
+
+
+.products{
+	margin-top : 100px;
+	margin-left : -100px;
 }

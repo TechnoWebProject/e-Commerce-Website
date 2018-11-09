@@ -1,1 +1,34 @@
-you researched a product -> work in progress
+<!doctype html>
+<head><link rel="stylesheet" href="..\Styles\main.css">
+<link rel="stylesheet" href="..\Styles\article_researched.css">
+<link rel="stylesheet" href="..\Styles\header.css">
+</head>
+
+<html>
+
+
+
+<body>
+<?php include 'header.php'; ?>
+<p>
+
+	BODY <!--Pas de solution pour l'instant-->
+	<br/><br/><br/><br/><br/>
+	
+<?php
+include '../Database/database.php';
+
+$research = $_GET['search']; 
+$researchMAJ = strtoupper($research);
+
+
+$var = 'research';
+include 'affichage_product.php';
+
+?>
+		
+</p>
+</body>
+</html>
+
+
