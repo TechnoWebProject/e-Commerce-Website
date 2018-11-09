@@ -87,7 +87,8 @@ while ($donnees = $reponse->fetch())
 			<label>Price : </label>
 			<?php echo ($donnees['unit_price']*$donnees['quantity']), ' €'; ?>
 			</p>
-			<form method="POST" action="confirmation_delete.php" id="delete">
+			<form method="POST" action="confirmation_cart.php" id="delete">
+			<input type="hidden" name="Quantity" value="0">
 			<input type="hidden" name = "ID" value = "<?php echo $donnees['id'] ?>">
 			<input type="submit" value ="Delete Article" name = "Delete Article" style="background-color: red;">
 			</form>
