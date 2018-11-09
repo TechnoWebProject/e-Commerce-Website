@@ -1,7 +1,7 @@
 
 
 <header>
-<p class="title"><a href="main.php">e-Commerce-Website</a></p>
+<p class="title"><a href="index.php">e-Commerce-Website</a></p>
 
 
 
