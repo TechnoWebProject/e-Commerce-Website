@@ -5,7 +5,7 @@ include "action/session.php";
 ?>
 
 <?php
-	include 'Database/database.php';
+	include 'action/database.php';
 ?>
 <?php
 //TODO (in the next step) control user access
@@ -59,8 +59,8 @@ include "action/session.php";
 	else{
 		//print_r($_GET);//affiche le contenue complet de GET
 		//Ajouter le ifexiste
-		if(file_exists("Pages/" .$_GET['page'] . ".php")){
-			include "Pages/" .$_GET['page'] .".php";
+		if(file_exists("action/" .$_GET['page'] . ".php")){
+			include "action/" .$_GET['page'] .".php";
 		}
 	}
 
@@ -68,6 +68,15 @@ include "action/session.php";
 <?php
 
 //create one php file for each view to manage on the website (don't forget to create on main.php view)
+
+	if($_GET){
+			//print_r($_GET);//affiche le contenue complet de GET
+			//Ajouter le ifexiste
+			if(file_exists("view/" .$_GET['page'] . ".php")){
+				include "view/" .$_GET['page'] .".php";
+			}
+		}
+
 
 //TODO use 
 //             input params (included in $_GET or $_POST)
@@ -86,23 +95,3 @@ include "action/session.php";
 
 
 
-<?php
-/*
-	else{
-		echo("c'est vide");
-		//TODO if 'view/'.$page'.php' exists then include it (use file_exists($filename) function)
-		//           else include 'view/main.php' (it has to exist)
-		$page = $_GET['page'];
-
-		$filename = 'Pages/'.$page.'.php';
-			}
-
-
-	if (file_exists($filename)){
-		echo "On include";
-		include $filename;
-		}
-		else{
-			include "Pages/main.php";
-		}*/
-?>

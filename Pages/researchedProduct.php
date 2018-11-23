@@ -1,9 +1,5 @@
-<?php include 'header.php'; ?>
 <p>
 
-	BODY <!--Pas de solution pour l'instant-->
-	<br/><br/><br/><br/><br/>
-	
 <?php
 //include '../Database/database.php';
 
