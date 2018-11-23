@@ -1,14 +1,3 @@
-<!doctype html>
-<head><link rel="stylesheet" href="..\Styles\main.css">
-<link rel="stylesheet" href="..\Styles\article_researched.css">
-<link rel="stylesheet" href="..\Styles\header.css">
-</head>
-
-<html>
-
-
-
-<body>
 <?php include 'header.php'; ?>
 <p>
 
@@ -16,19 +5,20 @@
 	<br/><br/><br/><br/><br/>
 	
 <?php
-include '../Database/database.php';
+//include '../Database/database.php';
 
 $research = $_GET['search']; 
 $researchMAJ = strtoupper($research);
 
+print_r($_GET);
+
 
 $var = 'research';
 include 'affichage_product.php';
+//include article.php;
 
 ?>
 		
 </p>
-</body>
-</html>
 
 

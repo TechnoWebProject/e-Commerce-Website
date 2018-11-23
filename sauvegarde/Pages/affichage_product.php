@@ -1,29 +1,4 @@
 <?php 
-if(!empty($_POST)){
-	$id=$_POST['ID'];
-	$quantity = $_POST['Quantity'];
-	if ($quantity = 0){
-		
-    
-		$sql = "DELETE FROM order_products
-		WHERE id = $id";
-	}
-	else {
-		$unit_price = $_POST['Unit_price'];
-	
-
-    
-		$sql = "INSERT INTO order_products(id, order_id, quantity, unit_price, created_at, updated_at) 
-		VALUES('$id', '1', '$quantity', '$unit_price', '2018-10-11 15:50:23', '2018-10-11 15:50:23')
-		ON DUPLICATE KEY UPDATE quantity = $quantity";
-	}
-	$bdd->exec($sql);
-	
-	exit();
-}
-
-
-
 
 if ($var == 'cart'){
 	$request="SELECT *
@@ -52,14 +27,13 @@ while ($donnees = $reponse->fetch())
 		?>
 		<TD>
 		<?php 
-		};
-		$link = "http://localhost/e-Commerce-Website/index.php?page=presentation&name=" . $donnees['name'] ;
+		}
+		$link = "http://localhost/e-Commerce-Website/Pages/researchedProduct.php?search=" . $donnees['name'];
 		?>
 		<a href="<?php echo($link); ?>">
 		<?php
 		echo "<img src='".$donnees['image']."'/>";
 		?>
-		
 		<ul><?php echo $donnees['name']; ?>
 			<li><?php echo $donnees['description']; ?></li>
 		</ul>
@@ -73,7 +47,7 @@ while ($donnees = $reponse->fetch())
 
 		?>
 
-		<form method="POST" action="<?php $_PHP_SELF ?>" id="quantity">
+		<form method="POST" action="confirmation_cart.php" id="quantity">
 		<label>Quantity :</label>
 		<?php
 		if ($var == 'cart'){
@@ -113,8 +87,7 @@ while ($donnees = $reponse->fetch())
 			<label>Price : </label>
 			<?php echo ($donnees['unit_price']*$donnees['quantity']), ' €'; ?>
 			</p>
-			<form method="POST" action="<?php $_PHP_SELF ?>" id="delete">
-			<input type ="hidden" name ="Quantity" value ="0">
+			<form method="POST" action="confirmation_delete.php" id="delete">
 			<input type="hidden" name = "ID" value = "<?php echo $donnees['id'] ?>">
 			<input type="submit" value ="Delete Article" name = "Delete Article" style="background-color: red;">
 			</form>
@@ -144,7 +117,7 @@ while ($donnees = $reponse->fetch())
 		?>
 		€
 		
-		<form method="POST" action="<?php $_PHP_SELF ?>" id="quantity">
+		<form method="POST" action="confirmation_cart.php" id="quantity">
 		<label></label>
 		<input type="int" name="Quantity" size="1" maxlength ="3" value="">
 		<input type="hidden" name = "ID" value = "<?php echo $donnees['id'] ?>">
@@ -154,7 +127,6 @@ while ($donnees = $reponse->fetch())
 		<?php
 		}
 	}
-	
 }
 	
 $reponse->closeCursor();

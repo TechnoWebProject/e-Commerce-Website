@@ -1,0 +1,36 @@
+.basket{
+	margin-top : 100px;
+	margin-left : 20px;
+	}
+
+.basket img{
+	position : relative;
+	height : 25%;
+	width : 25%;
+}
+
+	
+.basket ul{
+	position: relative;
+	text-align : center;
+	top : -80px;
+	left : -20px;
+}
+
+.basket #quantity{
+	position:relative;
+	top : -135px;
+	left : 375px;
+}
+
+.basket #delete{
+	position:relative;
+	top : -235px;
+	left : 740px;
+}
+
+.basket p{
+	position:relative;
+	top : -190px;
+	left : 620px;
+}
