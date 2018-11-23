@@ -1,7 +1,6 @@
 <?php
 //TODO start session
 include "action/session.php";
-
 ?>
 
 <?php
@@ -24,7 +23,9 @@ include "action/session.php";
 <link rel="stylesheet" href="Styles\signUp.css">
 -->
 
-<?php include "Pages/header.php"; ?>	
+<?php include "Pages/header.php"; 
+include "Pages/connexion.php";
+?>	
 </head>
 
 <body>
