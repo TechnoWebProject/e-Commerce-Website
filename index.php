@@ -1,10 +1,7 @@
 <?php
 //TODO start session
-<<<<<<< HEAD
 include "action/session.php";
 
-=======
->>>>>>> d51937ddb55ef833e7ae6665fed4c3ed46c60968
 ?>
 
 <?php
@@ -22,31 +19,16 @@ include "action/session.php";
 <link rel="stylesheet" href="Styles\article.css">
 <link rel="stylesheet" href="Styles\header.css">
 <link rel="stylesheet" href="Styles\cart.css">
-<<<<<<< HEAD
 <link rel="stylesheet" href="Styles\article_researched.css">
 <!--
 <link rel="stylesheet" href="Styles\signUp.css">
 -->
 
 <?php include "Pages/header.php"; ?>	
-=======
-
-<!--
-<link rel="stylesheet" href="Styles\signUp.css">
--->
-<link rel="stylesheet" href="Styles\article_researched.css">
->>>>>>> d51937ddb55ef833e7ae6665fed4c3ed46c60968
 </head>
 
 <body>
 
-<<<<<<< HEAD
-=======
-
-<?php
-	include "Pages/header.php";
-	?>
->>>>>>> d51937ddb55ef833e7ae6665fed4c3ed46c60968
 	<br>
 	<br>
 	<br>
@@ -63,7 +45,6 @@ include "action/session.php";
 	if(!$_GET){//si GET est vide alors on affiche la page de base
 		//echo("il y a du contenue");
 		//if($_GET['page'] != 'signUp'){
-<<<<<<< HEAD
 		
 		//Ajouter le ifexiste
 		if(file_exists("Pages/main.php")){
@@ -73,21 +54,14 @@ include "action/session.php";
 		else{
 			echo("Aucune Page a afficher");
 		}
-=======
-		include "Pages/main.php";
->>>>>>> d51937ddb55ef833e7ae6665fed4c3ed46c60968
 	}
 	
 	else{
 		//print_r($_GET);//affiche le contenue complet de GET
-<<<<<<< HEAD
 		//Ajouter le ifexiste
 		if(file_exists("Pages/" .$_GET['page'] . ".php")){
 			include "Pages/" .$_GET['page'] .".php";
 		}
-=======
-		include "Pages/" .$_GET['page'] .".php";
->>>>>>> d51937ddb55ef833e7ae6665fed4c3ed46c60968
 	}
 
 ?>
@@ -104,7 +78,6 @@ include "action/session.php";
 
 // add view display possibly using data from database
 ?>
-<<<<<<< HEAD
 
 
 </body></html>
@@ -113,10 +86,6 @@ include "action/session.php";
 
 
 
-=======
-</body></html>
-
->>>>>>> d51937ddb55ef833e7ae6665fed4c3ed46c60968
 <?php
 /*
 	else{
