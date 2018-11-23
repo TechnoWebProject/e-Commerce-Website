@@ -1,11 +1,6 @@
 <?php 
 
 
-
-
-
-
-
 if ($var == 'cart'){
 	$request="SELECT *
 	FROM products, order_products
@@ -149,8 +144,6 @@ if(!empty($_POST)){
 	$id=$_POST['ID'];
 	$quantity = $_POST['Quantity'];
 	if ($quantity = 0){
-		
-    
 		$sql = "DELETE FROM order_products
 		WHERE id = $id";
 	}
