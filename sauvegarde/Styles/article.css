@@ -1,0 +1,37 @@
+.article{
+	font-family : arial;
+	text-align: center;
+	overflow: hidden;
+	color : red;
+	
+}
+
+
+.article img{
+	position: relative;
+	height : 50%;
+	width : 50%;
+}
+
+.article ul{
+	position: relative;	
+	font-weight:bold;
+}
+
+.article li{
+	position : relative
+	font-family: arial;
+	font-weight : normal;
+	color : #BBBBBB;
+}
+
+.article td{
+	
+	width : 27%;
+}
+
+
+.products{
+	margin-top : 100px;
+	margin-left : -100px;
+}
