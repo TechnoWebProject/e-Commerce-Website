@@ -26,9 +26,9 @@ for($i=0; $i<$size;$i++)
 			<?php echo ($array_price[$i]*$array_quantity[$i]), ' €'; ?>
 		<form method="POST" action="<?php $_PHP_SELF ?>" id="delete">
 			<input type ="hidden" name ="Quantity" value ="0">
-			<input type="hidden" name = "ID" value = "<?php echo $donnees['id'] ?>">
+			<input type="hidden" name = "ID" value = "<?php echo $array_id[$i] ?>">
 			<input type="submit" value ="Delete Article" name = "Delete Article" style="background-color: red;">
 		</form>
-
+<?php
 }
 ?>

@@ -3,7 +3,7 @@
 if(!empty($_POST)){
 	$id=$_POST['ID'];
 	$quantity = $_POST['Quantity'];
-	if ($quantity = 0){
+	if ($quantity == 0){
 		$sql = "DELETE FROM order_products
 		WHERE id = $id";
 	}
@@ -32,7 +32,7 @@ $array_name=[];
 $array_description=[];
 $array_price=[];
 $array_id=[];
-$array_quantity[];
+$array_quantity=[];
 
 while ($donnees = $reponse->fetch())
 {

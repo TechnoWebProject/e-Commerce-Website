@@ -26,7 +26,7 @@
 		<?php 
 		echo $array_price[$i], ' €';
 		?>
-		<form method="POST" action="<index.php?page=add_to_cart>" id="quantity">
+		<form method="POST" action="index.php?page=add_to_cart>" id="quantity">
 		<label>Quantity :</label>
 
 		<input type="int" name="Quantity" size="1" maxlength ="3" value="">

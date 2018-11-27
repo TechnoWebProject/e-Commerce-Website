@@ -20,7 +20,7 @@
 		<li class="menu"><a href="index.php?page=products_2">Product menu</a></li>
 		
 		
-		<li class="menu"><a href="index.php?page=cart">Your cart</a></li>
+		<li class="menu"><a href="index.php?page=add_to_cart">Your cart</a></li>
 		
 		
 		<li class="menu"><a href="#">Account</a><ul>

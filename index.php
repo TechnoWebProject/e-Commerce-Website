@@ -1,6 +1,6 @@
 <?php
 //TODO start session
-include "action/session.php";
+//include "action/session.php";
 
 ?>
 
@@ -47,8 +47,8 @@ include "action/session.php";
 		//if($_GET['page'] != 'signUp'){
 		
 		//Ajouter le ifexiste
-		if(file_exists("Pages/main.php")){
-			include "Pages/main.php";
+		if(file_exists("view/main.php")){
+			include "view/main.php";
 		}
 		
 		else{
