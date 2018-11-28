@@ -21,7 +21,6 @@ elseif(isset($_POST['submit'])){
 		$lastId = $stmt->fetchColumn();
 		
 		if(!isset($_POST['check'])){
-			echo('bite');
 			$req2 = $bdd->prepare('INSERT INTO user_addresses(human_name, address_one, postal_code, city, country) VALUES(:name, :address, :postal, :city, :country)');
 			$req2->execute(array('name' => $_POST['complete-name'], 'address' => $_POST['billing-address'], 'postal' => $_POST['postal'],'city' => $_POST['city'], 'country' => $_POST['country']));
 			$req3 = $bdd->prepare('INSERT INTO users(username, email, password, billing_adress_id,delivery_adress_id) VALUES(:username, :email, :password, :billing_adress_id, :delivery_adress_id)');
