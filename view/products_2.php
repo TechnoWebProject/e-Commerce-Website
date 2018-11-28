@@ -13,8 +13,8 @@
 		}
 		?>
 		<TD>
-
-		<a href=<?php echo("index.php?page=presentation&name=". $array_name[$i]);?>>
+		<?php $name = str_replace(' ', '', $array_name[$i]); ?>
+		<a href=<?php echo("index.php?page=presentation&name=". $name);?>>
 		<?php
 		echo ("<img src='".$array_image[$i]."'/>");
 
@@ -26,7 +26,7 @@
 		<?php 
 		echo $array_price[$i], ' €';
 		?>
-		<form method="POST" action="index.php?page=add_to_cart>" id="quantity">
+		<form method="POST" action="index.php?page=add_to_cart" id="quantity">
 		<label>Quantity :</label>
 
 		<input type="int" name="Quantity" size="1" maxlength ="3" value="">

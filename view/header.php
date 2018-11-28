@@ -11,8 +11,8 @@
 	
 		<li class="search">
 			<form method="GET" action="index.php">
-				<input type="text" name="search" placeholder="Search on Website">
-				<input type="hidden" name="page" value="researchedProduct">
+				<input type="text" name="name" placeholder="Search on Website">
+				<input type="hidden" name="page" value="presentation">
 			</form>
 		</li>
 		

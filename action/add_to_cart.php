@@ -1,6 +1,6 @@
 <?php 
 
-if(!empty($_POST)){
+if($_POST){
 	$id=$_POST['ID'];
 	$quantity = $_POST['Quantity'];
 	if ($quantity == 0){
@@ -18,7 +18,6 @@ if(!empty($_POST)){
 	}
 	$bdd->exec($sql);
 	
-	exit();
 }
 
 $request="SELECT *
@@ -45,3 +44,6 @@ while ($donnees = $reponse->fetch())
 }
 
 ?>
+
+
+

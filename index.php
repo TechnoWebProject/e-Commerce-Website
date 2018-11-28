@@ -24,7 +24,7 @@
 <link rel="stylesheet" href="Styles\signUp.css">
 -->
 
-<?php include "Pages/header.php"; ?>	
+<?php include "view/header.php"; ?>	
 </head>
 
 <body>
@@ -41,8 +41,10 @@
 	//echo('le get "page" retourne ' . $_GET['page']);//on utilise cette ligne pour controle le retour
 	// TODO using $page decide to include header.php
 	//***********************************************************//
+		
 	
-	if(!$_GET){//si GET est vide alors on affiche la page de base
+
+	if(!$_GET && !$_POST){//si GET est vide alors on affiche la page de base
 		//echo("il y a du contenue");
 		//if($_GET['page'] != 'signUp'){
 		
@@ -55,8 +57,10 @@
 			echo("Aucune Page a afficher");
 		}
 	}
+
 	
-	else{
+	
+	if($_GET){
 		//print_r($_GET);//affiche le contenue complet de GET
 		//Ajouter le ifexiste
 		if(file_exists("action/" .$_GET['page'] . ".php")){
@@ -64,18 +68,51 @@
 		}
 	}
 
+	if($_POST){
+		//print_r($_GET);//affiche le contenue complet de GET
+		//Ajouter le ifexiste
+		if(isset($_POST['page'])){
+			if(file_exists("action/" .$_POST['page'] . ".php")){
+			
+				include "action/" .$_POST['page'] .".php";
+			}
+		}
+	}
+
+
+
+
+	
+
 ?>
 <?php
 
 //create one php file for each view to manage on the website (don't forget to create on main.php view)
 
+	//if($_GET){print_r($_GET);}
+	//else{print_r($_POST);}
+
+	
 	if($_GET){
 			//print_r($_GET);//affiche le contenue complet de GET
 			//Ajouter le ifexiste
+
+
 			if(file_exists("view/" .$_GET['page'] . ".php")){
 				include "view/" .$_GET['page'] .".php";
 			}
+
 		}
+
+	if($_POST){
+
+			if(isset($_POST['page'])){
+				if(file_exists("view/" .$_POST['page'] . ".php")){
+
+					include "view/" .$_POST['page'] .".php";
+				}
+			}
+	}
 
 
 //TODO use 
@@ -87,6 +124,8 @@
 
 // add view display possibly using data from database
 ?>
+
+
 
 
 </body></html>
