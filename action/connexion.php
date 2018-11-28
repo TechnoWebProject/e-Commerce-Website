@@ -1,42 +1,54 @@
-<?php  
+<?php
+$titre="Connexion";
 
-if((isset($_POST['submit'])&&(!(isset($_POST['check']))&&(!(isset($_POST['billing-address'])) || trim($_POST['billing-address'])=='') ))){
-		//header('location: ');
+echo '<p><i>Vous êtes ici</i> : <a href="./index.php">Index du forum</a> --> Connexion';
+?>
+
+
+<?php
+echo '<h1>Connexion</h1>';
+if (isset($_SESSION['id']) && $_SESSION['id']!=0) {
+ erreur(ERR_IS_CO);
+?>
+<?php
+//On reprend la suite du code
+} else
+{
+    $message='';
+    if (empty($_POST['pseudo']) || empty($_POST['password']) ) //Oublie d'un champ
+    {
+        $message = '<p>une erreur s\'est produite pendant votre identification.
+  Vous devez remplir tous les champs</p>
+  <p>Cliquez <a href="./connexion.php">ici</a> pour revenir</p>';
+    }
+    else //On check le mot de passe
+    {
+        $query=$db->prepare('SELECT id, username
+        FROM forum_membres WHERE membre_pseudo = :pseudo');
+        $query->bindValue(':pseudo',$_POST['pseudo'], PDO::PARAM_STR);
+        $query->execute();
+        $data=$query->fetch();
+  if ($data['username'] == md5($_POST['password'])) // Acces OK !
+  {
+      $_SESSION['pseudo'] = $data['username'];
+      $_SESSION['id'] = $data['id'];
+      $message = '<p>Bienvenue '.$data['pseudo'].', 
+      vous êtes maintenant connecté!</p>
+      <p>Cliquez <a href="./index.php">ici</a> 
+      pour revenir à la page d accueil</p>';  
+  }
+  else // Acces pas OK !
+  {
+      $message = '<p>Une erreur s\'est produite 
+      pendant votre identification.<br /> Le mot de passe ou le pseudo 
+            entré n\'est pas correcte.</p><p>Cliquez <a href="./connexion.php">ici</a> 
+      pour revenir à la page précédente
+      <br /><br />Cliquez <a href="./index.php">ici</a> 
+      pour revenir à la page d accueil</p>';
+  }
+    $query->CloseCursor();
+    }
+    echo $message.'</div></body></html>';
+
 }
-elseif(isset($_POST['submit'])){
-
-	$reponse = $bdd->prepare('SELECT username FROM users');
-	$reponse->execute();
-	$correctusrname=TRUE;
-	while($donnees=$reponse->fetch()){
-		var_dump($donnees['username']);
-		var_dump($_POST['username']);
-		if($donnees['username']==$_POST['username']){
-			$correctusrname=FALSE;
-		}
-	}
-	if($correctusrname==TRUE){		$req1 = $bdd->prepare('INSERT INTO user_addresses(human_name, address_one, postal_code, city, country) VALUES(:name, :address, :postal, :city, :country)');
-		$req1->execute(array('name' => $_POST['complete-name'], 'address' => $_POST['del-address'], 'postal' => $_POST['postal'],'city' => $_POST['city'], 'country' => $_POST['country']));
-		$stmt = $bdd->query("SELECT LAST_INSERT_ID()");
-		$lastId = $stmt->fetchColumn();
-		
-		if(!isset($_POST['check'])){
-			echo('bite');
-			$req2 = $bdd->prepare('INSERT INTO user_addresses(human_name, address_one, postal_code, city, country) VALUES(:name, :address, :postal, :city, :country)');
-			$req2->execute(array('name' => $_POST['complete-name'], 'address' => $_POST['billing-address'], 'postal' => $_POST['postal'],'city' => $_POST['city'], 'country' => $_POST['country']));
-			$req3 = $bdd->prepare('INSERT INTO users(username, email, password, billing_adress_id,delivery_adress_id) VALUES(:username, :email, :password, :billing_adress_id, :delivery_adress_id)');
-
-			$req3->execute(array('username' => $_POST['username'],'email' => $_POST['e-mail'],'password' => $_POST['password'],'billing_adress_id' => $lastId+1 ,'delivery_adress_id' => $lastId));
-		}
-		else{
-			$req3 = $bdd->prepare('INSERT INTO users(username, email, password, billing_adress_id,delivery_adress_id) VALUES(:username, :email, :password, :billing_adress_id, :delivery_adress_id)');
-			$req3->execute(array('username' => $_POST['username'],'email' => $_POST['e-mail'],'password' => $_POST['password'],'billing_adress_id' => $lastId,'delivery_adress_id' => $lastId));						
-		}
-		#header('location: ');
-	}
-	else{
-		#header('location: ');
-	}
-}					
-
 ?>

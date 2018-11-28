@@ -23,7 +23,7 @@
 		<li class="menu"><a href="index.php?page=add_to_cart">Your cart</a></li>
 		
 		
-		<li class="menu"><a href="#">Account</a><ul>
+		<li class="menu"><a href="index.php?page=signUp">Account</a><ul>
 			
 			<li class="submenu">
 			Sign in.
@@ -38,6 +38,7 @@
 					<br/>
 				<input type="submit" value="LOGIN">
 				<input type="hidden" name="page" value="main">
+
 			</form>
 			
 			<form>

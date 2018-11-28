@@ -48,6 +48,7 @@ if (isset($_SESSION['id']) && $_SESSION['id']!=0) {
   }
     $query->CloseCursor();
     }
+    
     echo $message.'</div></body></html>';
 
 }

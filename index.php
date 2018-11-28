@@ -79,6 +79,8 @@
 		}
 	}
 
+	include "action/informationaccount.php";
+
 
 
 
